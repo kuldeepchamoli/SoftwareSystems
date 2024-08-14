@@ -1,0 +1,26 @@
+kuldeep-chamoli@ubuntu:~/Desktop/SoftwareSystems101-main$ mkdir q11
+kuldeep-chamoli@ubuntu:~/Desktop/SoftwareSystems101-main$ cd q11
+kuldeep-chamoli@ubuntu:~/Desktop/SoftwareSystems101-main/q11$ nano q11_duplicate .c
+kuldeep-chamoli@ubuntu:~/Desktop/SoftwareSystems101-main/q11$ gcc -0 q11_duplicate  q11_duplicate.c
+gcc: error: unrecognized command-line option ‘-0’
+kuldeep-chamoli@ubuntu:~/Desktop/SoftwareSystems101-main/q11$ gcc -o q11_duplicate  q11_duplicate.c
+cc1: fatal error: q11_duplicate.c: No such file or directory
+compilation terminated.
+kuldeep-chamoli@ubuntu:~/Desktop/SoftwareSystems101-main/q11$ ls
+q11_duplicate
+kuldeep-chamoli@ubuntu:~/Desktop/SoftwareSystems101-main/q11$ nano q11_duplicate 
+kuldeep-chamoli@ubuntu:~/Desktop/SoftwareSystems101-main/q11$ gcc -o q11_duplicate  q11_duplicate.c
+kuldeep-chamoli@ubuntu:~/Desktop/SoftwareSystems101-main/q11$ ./q11_duplicate 
+Data appended successfully. Check the file 'example.txt' to verify.
+kuldeep-chamoli@ubuntu:~/Desktop/SoftwareSystems101-main/q11$ cat example.txt 
+Data with dup
+Data with dup2
+Data with fcntl
+kuldeep-chamoli@ubuntu:~/Desktop/SoftwareSystems101-main/q11$ nano inst.txt^C
+Command 'ano' not found, did you mean:
+  command 'ao' from snap ao (6.9.0)
+  command 'nano' from snap nano (7.2+pkg-4057)
+  command 'ant' from snap ant (1.10.14)
+  command 'and' from deb and (1.2.2-4.2)
+  command 'anno' from deb mailutils-mh (1:3.15-4)
+  command 'anno' from deb mmh (0.4-4)

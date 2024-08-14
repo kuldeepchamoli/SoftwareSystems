@@ -1,0 +1,40 @@
+kuldeep-chamoli@ubuntu:~/Desktop/SoftwareSystems101-main$ mk q5
+mk: command not found
+kuldeep-chamoli@ubuntu:~/Desktop/SoftwareSystems101-main$ mkdir q5
+kuldeep-chamoli@ubuntu:~/Desktop/SoftwareSystems101-main$ cd q5
+kuldeep-chamoli@ubuntu:~/Desktop/SoftwareSystems101-main/q5$ nano five_file.c
+kuldeep-chamoli@ubuntu:~/Desktop/SoftwareSystems101-main/q5$ gcc -o five_file five_file.c 
+kuldeep-chamoli@ubuntu:~/Desktop/SoftwareSystems101-main/q5$ ./five_file 
+Created file1.txt with file descriptor: 3
+Created file2.txt with file descriptor: 4
+Created file3.txt with file descriptor: 5
+Created file4.txt with file descriptor: 6
+Created file5.txt with file descriptor: 7
+^C
+kuldeep-chamoli@ubuntu:~/Desktop/SoftwareSystems101-main/q5$ rm five_file
+kuldeep-chamoli@ubuntu:~/Desktop/SoftwareSystems101-main/q5$ gcc -o five_file five_file.c 
+kuldeep-chamoli@ubuntu:~/Desktop/SoftwareSystems101-main/q5$ ./five_file &
+[1] 13228
+kuldeep-chamoli@ubuntu:~/Desktop/SoftwareSystems101-main/q5$ Created file1.txt with file descriptor: 3
+Created file2.txt with file descriptor: 4
+Created file3.txt with file descriptor: 5
+Created file4.txt with file descriptor: 6
+Created file5.txt with file descriptor: 7
+^C
+kuldeep-chamoli@ubuntu:~/Desktop/SoftwareSystems101-main/q5$ ps aux | grep five_file             
+kuldeep+   13228  0.0  0.0   2616  1280 pts/4    S    00:50   0:00 ./five_file
+kuldeep+   13250  0.0  0.0   9204  2304 pts/4    S+   00:51   0:00 grep --color=auto five_file
+kuldeep-chamoli@ubuntu:~/Desktop/SoftwareSystems101-main/q5$ cd /proc/13228/fd
+kuldeep-chamoli@ubuntu:/proc/13228/fd$ ls -l
+total 0
+lrwx------ 1 kuldeep-chamoli kuldeep-chamoli 64 Aug 11 00:53 0 -> /dev/pts/4
+lrwx------ 1 kuldeep-chamoli kuldeep-chamoli 64 Aug 11 00:53 1 -> /dev/pts/4
+lrwx------ 1 kuldeep-chamoli kuldeep-chamoli 64 Aug 11 00:53 2 -> /dev/pts/4
+l-wx------ 1 kuldeep-chamoli kuldeep-chamoli 64 Aug 11 00:53 3 -> /home/kuldeep-chamoli/Desktop/SoftwareSystems101-main/q5/file1.txt
+l-wx------ 1 kuldeep-chamoli kuldeep-chamoli 64 Aug 11 00:53 4 -> /home/kuldeep-chamoli/Desktop/SoftwareSystems101-main/q5/file2.txt
+l-wx------ 1 kuldeep-chamoli kuldeep-chamoli 64 Aug 11 00:53 5 -> /home/kuldeep-chamoli/Desktop/SoftwareSystems101-main/q5/file3.txt
+l-wx------ 1 kuldeep-chamoli kuldeep-chamoli 64 Aug 11 00:53 6 -> /home/kuldeep-chamoli/Desktop/SoftwareSystems101-main/q5/file4.txt
+l-wx------ 1 kuldeep-chamoli kuldeep-chamoli 64 Aug 11 00:53 7 -> /home/kuldeep-chamoli/Desktop/SoftwareSystems101-main/q5/file5.txt
+kuldeep-chamoli@ubuntu:/proc/13228/fd$ kill 13228
+kuldeep-chamoli@ubuntu:/proc/13228/fd$ 
+

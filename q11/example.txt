@@ -1,0 +1,3 @@
+Data with dup
+Data with dup2
+Data with fcntl

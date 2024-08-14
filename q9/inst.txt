@@ -1,0 +1,17 @@
+kuldeep-chamoli@ubuntu:~/Desktop/SoftwareSystems101-main/q9$ nano example.txt
+kuldeep-chamoli@ubuntu:~/Desktop/SoftwareSystems101-main/q9$ nano inst.txt
+kuldeep-chamoli@ubuntu:~/Desktop/SoftwareSystems101-main/q9$ gcc -o q9_info q9_info.c
+kuldeep-chamoli@ubuntu:~/Desktop/SoftwareSystems101-main/q9$ ./q9_info example.txt
+File: example.txt
+a. Inode: 4212872
+b. Number of hard links: 1
+c. UID: 1000
+d. GID: 1000
+e. Size: 15 bytes
+f. Block size: 4096 bytes
+g. Number of blocks: 8
+h. Time of last access: Tue Aug 13 15:50:35 2024
+i. Time of last modification: Tue Aug 13 15:50:08 2024
+j. Time of last change: Tue Aug 13 15:50:08 2024
+kuldeep-chamoli@ubuntu:~/Desktop/SoftwareSystems101-main/q9$ 
+

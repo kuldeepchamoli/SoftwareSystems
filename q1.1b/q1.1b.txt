@@ -1,0 +1,2 @@
+ln /home/kuldeep-chamoli/Desktop/SoftwareSystems101-main/q1.1b/assi2/file1.2.c 
+/file1.2.c

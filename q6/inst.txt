@@ -1,0 +1,9 @@
+kuldeep-chamoli@ubuntu:~/Desktop/SoftwareSystems101-main$ mkdir q6
+kuldeep-chamoli@ubuntu:~/Desktop/SoftwareSystems101-main$ cd q6
+kuldeep-chamoli@ubuntu:~/Desktop/SoftwareSystems101-main/q6$ nano read_write.c
+kuldeep-chamoli@ubuntu:~/Desktop/SoftwareSystems101-main/q6$ gcc -o read_write read_write.c
+kuldeep-chamoli@ubuntu:~/Desktop/SoftwareSystems101-main/q6$ ./read_write
+Hello there Linux How u doing
+Hello there Linux How u doing
+kuldeep-chamoli@ubuntu:~/Desktop/SoftwareSystems101-main/q6$ 
+

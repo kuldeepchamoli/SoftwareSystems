@@ -1,0 +1,28 @@
+kuldeep-chamoli@ubuntu:~/Desktop/SoftwareSystems101-main$ /
+bash: /: Is a directory
+kuldeep-chamoli@ubuntu:~/Desktop/SoftwareSystems101-main$ mkdir q8
+kuldeep-chamoli@ubuntu:~/Desktop/SoftwareSystems101-main$ cd q8
+kuldeep-chamoli@ubuntu:~/Desktop/SoftwareSystems101-main/q8$ nano read_only.c
+kuldeep-chamoli@ubuntu:~/Desktop/SoftwareSystems101-main/q8$ nano file_read.txt
+kuldeep-chamoli@ubuntu:~/Desktop/SoftwareSystems101-main/q8$ gcc -o read_only read_only.c
+read_only.c: In function ‘main’:
+read_only.c:49:13: warning: implicit declaration of function ‘memmove’ [-Wimplicit-function-declaration]
+   49 |             memmove(buffer, line_start, remaining);
+      |             ^~~~~~~
+read_only.c:5:1: note: include ‘<string.h>’ or provide a declaration of ‘memmove’
+    4 | #include <stdlib.h>    // For exit()
+  +++ |+#include <string.h>
+    5 | 
+read_only.c:49:13: warning: incompatible implicit declaration of built-in function ‘memmove’ [-Wbuiltin-declaration-mismatch]
+   49 |             memmove(buffer, line_start, remaining);
+      |             ^~~~~~~
+read_only.c:49:13: note: include ‘<string.h>’ or provide a declaration of ‘memmove’
+kuldeep-chamoli@ubuntu:~/Desktop/SoftwareSystems101-main/q8$ nano read_only.c
+kuldeep-chamoli@ubuntu:~/Desktop/SoftwareSystems101-main/q8$ gcc -o read_only read_only.c
+kuldeep-chamoli@ubuntu:~/Desktop/SoftwareSystems101-main/q8$ ./read_only file_raed.txt
+Error opening file: No such file or directory
+kuldeep-chamoli@ubuntu:~/Desktop/SoftwareSystems101-main/q8$ ./read_only file_read.txt
+Hi how are u
+I am fine
+Thank You
+kuldeep-chamoli@ubuntu:~/Desktop/SoftwareSystems101-main/q8$ nano inst.txt

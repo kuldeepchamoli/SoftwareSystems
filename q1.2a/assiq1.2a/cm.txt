@@ -1,0 +1,12 @@
+kuldeep-chamoli@ubuntu:~/Desktop/SoftwareSystems101-main/q1.2a/assiq1.2a$ ls -l > myoutput.txt
+kuldeep-chamoli@ubuntu:~/Desktop/SoftwareSystems101-main/q1.2a/assiq1.2a$ cat myoutput.txt 
+total 20
+-rw------- 1 kuldeep-chamoli kuldeep-chamoli 16152 Aug 10 22:13 a.out
+lrwxrwxrwx 1 kuldeep-chamoli kuldeep-chamoli    19 Aug 10 22:08 file.txt -> ../doosra3/file.txt
+lrwxrwxrwx 1 kuldeep-chamoli kuldeep-chamoli     4 Aug 10 22:13 huh -> huhu
+-rw-rw-r-- 1 kuldeep-chamoli kuldeep-chamoli     0 Aug 10 22:15 myoutput.txt
+-rw-rw-r-- 1 kuldeep-chamoli kuldeep-chamoli   233 Aug 10 00:56 q2.1.c
+lrwxrwxrwx 1 kuldeep-chamoli kuldeep-chamoli    19 Aug 10 22:08 soft_link -> ../doosra3/file.txt
+kuldeep-chamoli@ubuntu:~/Desktop/SoftwareSystems101-main/q1.2a/assiq1.2a$ ^C
+kuldeep-chamoli@ubuntu:~/Desktop/SoftwareSystems101-main/q1.2a/assiq1.2a$ 
+

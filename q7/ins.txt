@@ -1,0 +1,11 @@
+kuldeep-chamoli@ubuntu:~/Desktop/SoftwareSystems101-main$ mkdir q7
+kuldeep-chamoli@ubuntu:~/Desktop/SoftwareSystems101-main$ cd q7
+kuldeep-chamoli@ubuntu:~/Desktop/SoftwareSystems101-main/q7$ nano move.c
+kuldeep-chamoli@ubuntu:~/Desktop/SoftwareSystems101-main/q7$ gcc -o move move.c
+kuldeep-chamoli@ubuntu:~/Desktop/SoftwareSystems101-main/q7$ nano file1.txt
+kuldeep-chamoli@ubuntu:~/Desktop/SoftwareSystems101-main/q7$ nano file2.txt
+kuldeep-chamoli@ubuntu:~/Desktop/SoftwareSystems101-main/q7$ ./move file1 file2
+Error opening source file: No such file or directory
+kuldeep-chamoli@ubuntu:~/Desktop/SoftwareSystems101-main/q7$ ./move file1.txt file2.txt
+kuldeep-chamoli@ubuntu:~/Desktop/SoftwareSystems101-main/q7$ cat file2.txt
+hi how are u

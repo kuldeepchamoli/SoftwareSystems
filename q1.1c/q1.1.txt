@@ -1,0 +1,4 @@
+mkfifo demopipe
+ls -l > demopipe
+open new terminal
+cat demopipe//it will be printed

@@ -1,0 +1,103 @@
+terminal 1------
+kuldeep-chamoli@ubuntu:~/Desktop/SoftwareSystems101-main/q1.2b$ nano ins.txt
+kuldeep-chamoli@ubuntu:~/Desktop/SoftwareSystems101-main/q1.2b$ cd ../
+kuldeep-chamoli@ubuntu:~/Desktop/SoftwareSystems101-main$ mkdir q1.2c
+kuldeep-chamoli@ubuntu:~/Desktop/SoftwareSystems101-main$ cd q1.2c
+kuldeep-chamoli@ubuntu:~/Desktop/SoftwareSystems101-main/q1.2c$ mkdir assi
+kuldeep-chamoli@ubuntu:~/Desktop/SoftwareSystems101-main/q1.2c$ mkdir doosra
+kuldeep-chamoli@ubuntu:~/Desktop/SoftwareSystems101-main/q1.2c$ cd assi
+kuldeep-chamoli@ubuntu:~/Desktop/SoftwareSystems101-main/q1.2c/assi$ nano pip.c
+kuldeep-chamoli@ubuntu:~/Desktop/SoftwareSystems101-main/q1.2c/assi$ nano original.txt
+kuldeep-chamoli@ubuntu:~/Desktop/SoftwareSystems101-main/q1.2c/assi$ gcc pip.c
+kuldeep-chamoli@ubuntu:~/Desktop/SoftwareSystems101-main/q1.2c/assi$ ./a.out
+Error creating FIFO: File exists
+kuldeep-chamoli@ubuntu:~/Desktop/SoftwareSystems101-main/q1.2c/assi$ gcc pip.c
+kuldeep-chamoli@ubuntu:~/Desktop/SoftwareSystems101-main/q1.2c/assi$ ./a.out
+Error creating FIFO: File exists
+kuldeep-chamoli@ubuntu:~/Desktop/SoftwareSystems101-main/q1.2c/assi$ nano pip.c 
+kuldeep-chamoli@ubuntu:~/Desktop/SoftwareSystems101-main/q1.2c/assi$ gcc pip.c
+kuldeep-chamoli@ubuntu:~/Desktop/SoftwareSystems101-main/q1.2c/assi$ ./a.out
+Error creating FIFO: File exists
+kuldeep-chamoli@ubuntu:~/Desktop/SoftwareSystems101-main/q1.2c/assi$ ls -l
+total 24
+-rwxrwxr-x 1 kuldeep-chamoli kuldeep-chamoli 16048 Aug 10 23:29 a.out
+-rw-rw-r-- 1 kuldeep-chamoli kuldeep-chamoli    16 Aug 10 23:20 original.txt
+-rw-rw-r-- 1 kuldeep-chamoli kuldeep-chamoli   505 Aug 10 23:29 pip.c
+kuldeep-chamoli@ubuntu:~/Desktop/SoftwareSystems101-main/q1.2c/assi$ rm original.txt
+kuldeep-chamoli@ubuntu:~/Desktop/SoftwareSystems101-main/q1.2c/assi$ ./a.out
+FIFO (named pipe) created successfully: /home/kuldeep-chamoli/Desktop/SoftwareSystems101-main/q1.2c/assi/original.txt
+kuldeep-chamoli@ubuntu:~/Desktop/SoftwareSystems101-main/q1.2c/assi$ mkfifo new.txt
+kuldeep-chamoli@ubuntu:~/Desktop/SoftwareSystems101-main/q1.2c/assi$ ls -l
+total 20
+-rwxrwxr-x 1 kuldeep-chamoli kuldeep-chamoli 16048 Aug 10 23:29 a.out
+prw-rw-r-- 1 kuldeep-chamoli kuldeep-chamoli     0 Aug 10 23:31 new.txt
+prw-rw-r-- 1 kuldeep-chamoli kuldeep-chamoli     0 Aug 10 23:30 original.txt
+-rw-rw-r-- 1 kuldeep-chamoli kuldeep-chamoli   505 Aug 10 23:29 pip.c
+kuldeep-chamoli@ubuntu:~/Desktop/SoftwareSystems101-main/q1.2c/assi$ ls -l > new.txt
+^C
+kuldeep-chamoli@ubuntu:~/Desktop/SoftwareSystems101-main/q1.2c/assi$ cat new.txt
+^C
+kuldeep-chamoli@ubuntu:~/Desktop/SoftwareSystems101-main/q1.2c/assi$ ls -l < new.txt
+^C
+kuldeep-chamoli@ubuntu:~/Desktop/SoftwareSystems101-main/q1.2c/assi$ ls
+a.out  new.txt  original.txt  pip.c
+kuldeep-chamoli@ubuntu:~/Desktop/SoftwareSystems101-main/q1.2c/assi$ ls > new.txt
+hih
+ihi
+nhk
+kuldeep-chamoli@ubuntu:~/Desktop/SoftwareSystems101-main/q1.2c/assi$ hih
+Command 'hih' not found, did you mean:
+  command 'hi' from snap hi (1.1)
+See 'snap info <snapname>' for additional versions.
+kuldeep-chamoli@ubuntu:~/Desktop/SoftwareSystems101-main/q1.2c/assi$ ihi
+Command 'ihi' not found, did you mean:
+  command 'iri' from snap iri (1.1.0)
+  command 'hi' from snap hi (1.1)
+  command 'ii' from deb ii (1.8-3+ds)
+See 'snap info <snapname>' for additional versions.
+kuldeep-chamoli@ubuntu:~/Desktop/SoftwareSystems101-main/q1.2c/assi$ nhk
+Command 'nhk' not found, did you mean:
+  command 'xhk' from deb xhk (1.2-2)
+Try: sudo apt install <deb name>
+kuldeep-chamoli@ubuntu:~/Desktop/SoftwareSystems101-main/q1.2c/assi$ ls
+a.out  new.txt  original.txt  pip.c
+kuldeep-chamoli@ubuntu:~/Desktop/SoftwareSystems101-main/q1.2c/assi$ ls
+a.out  new.txt  original.txt  pip.c
+kuldeep-chamoli@ubuntu:~/Desktop/SoftwareSystems101-main/q1.2c/assi$ ls -l
+total 20
+-rwxrwxr-x 1 kuldeep-chamoli kuldeep-chamoli 16048 Aug 10 23:29 a.out
+prw-rw-r-- 1 kuldeep-chamoli kuldeep-chamoli     0 Aug 10 23:35 new.txt
+prw-rw-r-- 1 kuldeep-chamoli kuldeep-chamoli     0 Aug 10 23:30 original.txt
+-rw-rw-r-- 1 kuldeep-chamoli kuldeep-chamoli   505 Aug 10 23:29 pip.c
+kuldeep-chamoli@ubuntu:~/Desktop/SoftwareSystems101-main/q1.2c/assi$ ls -l > new.txt
+
+
+terminal --2//fifo does something in another terminal
+kuldeep-chamoli@ubuntu:~/Desktop/SoftwareSystems101-main/q1.2a/assiq1.2a$ ls
+a.out  cm.txt  file.txt  huh  myoutput.txt  q2.1.c  soft_link
+kuldeep-chamoli@ubuntu:~/Desktop/SoftwareSystems101-main/q1.2a/assiq1.2a$ cd ../
+kuldeep-chamoli@ubuntu:~/Desktop/SoftwareSystems101-main/q1.2a$ cd assi
+bash: cd: assi: No such file or directory
+kuldeep-chamoli@ubuntu:~/Desktop/SoftwareSystems101-main/q1.2a$ ls
+assiq1.2a  doosra3
+kuldeep-chamoli@ubuntu:~/Desktop/SoftwareSystems101-main/q1.2a$ cd ../
+kuldeep-chamoli@ubuntu:~/Desktop/SoftwareSystems101-main$ ls
+q1.1a  q1.1b  q1.1c  q1.2a  q1.2b  q1.2c  README.md
+kuldeep-chamoli@ubuntu:~/Desktop/SoftwareSystems101-main$ cd q1.2c
+kuldeep-chamoli@ubuntu:~/Desktop/SoftwareSystems101-main/q1.2c$ ls
+assi  doosra
+kuldeep-chamoli@ubuntu:~/Desktop/SoftwareSystems101-main/q1.2c$ cd assi/
+kuldeep-chamoli@ubuntu:~/Desktop/SoftwareSystems101-main/q1.2c/assi$ cat new.txt
+a.out
+new.txt
+original.txt
+pip.c
+kuldeep-chamoli@ubuntu:~/Desktop/SoftwareSystems101-main/q1.2c/assi$ cat new.txt
+total 20
+-rwxrwxr-x 1 kuldeep-chamoli kuldeep-chamoli 16048 Aug 10 23:29 a.out
+prw-rw-r-- 1 kuldeep-chamoli kuldeep-chamoli     0 Aug 10 23:35 new.txt
+prw-rw-r-- 1 kuldeep-chamoli kuldeep-chamoli     0 Aug 10 23:30 original.txt
+-rw-rw-r-- 1 kuldeep-chamoli kuldeep-chamoli   505 Aug 10 23:29 pip.c
+kuldeep-chamoli@ubuntu:~/Desktop/SoftwareSystems101-main/q1.2c/assi$ 
+
+

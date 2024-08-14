@@ -1,0 +1,15 @@
+kuldeep-chamoli@ubuntu:~/Desktop/SoftwareSystems101-main$ mkdir q4
+kuldeep-chamoli@ubuntu:~/Desktop/SoftwareSystems101-main$ nano excl.c
+kuldeep-chamoli@ubuntu:~/Desktop/SoftwareSystems101-main$ nano existing_file.txt
+kuldeep-chamoli@ubuntu:~/Desktop/SoftwareSystems101-main$ gcc -o excl excl.c
+kuldeep-chamoli@ubuntu:~/Desktop/SoftwareSystems101-main$ 
+kuldeep-chamoli@ubuntu:~/Desktop/SoftwareSystems101-main$ ./excl
+File opened successfully with file descriptor: 3
+File opened successfully with O_EXCL, file descriptor: 4
+kuldeep-chamoli@ubuntu:~/Desktop/SoftwareSystems101-main$ ls -l excl
+ls: cannot access 'excl': No such file or directory
+kuldeep-chamoli@ubuntu:~/Desktop/SoftwareSystems101-main$ ls -l excl.c
+ls: cannot access 'excl.c': No such file or directory
+kuldeep-chamoli@ubuntu:~/Desktop/SoftwareSystems101-main$ cd q4
+kuldeep-chamoli@ubuntu:~/Desktop/SoftwareSystems101-main/q4$ ls -l excl.c
+-rw-rw-r-- 1 kuldeep-chamoli kuldeep-chamoli 1803 Aug 11 00:36 excl.c

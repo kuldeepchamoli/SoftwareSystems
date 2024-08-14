@@ -1,0 +1,11 @@
+kuldeep-chamoli@ubuntu:~/Desktop/SoftwareSystems101-main$ mkdir q3
+kuldeep-chamoli@ubuntu:~/Desktop/SoftwareSystems101-main$ cd q3
+kuldeep-chamoli@ubuntu:~/Desktop/SoftwareSystems101-main/q3$ nano create.c
+kuldeep-chamoli@ubuntu:~/Desktop/SoftwareSystems101-main/q3$ gcc -o create create,c
+/usr/bin/ld: cannot find create,c: No such file or directory
+collect2: error: ld returned 1 exit status
+kuldeep-chamoli@ubuntu:~/Desktop/SoftwareSystems101-main/q3$ gcc -o create create.c
+kuldeep-chamoli@ubuntu:~/Desktop/SoftwareSystems101-main/q3$ ./create
+File created successfully with file descriptor: 3
+kuldeep-chamoli@ubuntu:~/Desktop/SoftwareSystems101-main/q3$ nano ins.txt
+kuldeep-chamoli@ubuntu:~/Desktop/SoftwareSystems101-main/q3$ 

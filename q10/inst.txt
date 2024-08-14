@@ -1,0 +1,14 @@
+kuldeep-chamoli@ubuntu:~/Desktop/SoftwareSystems101-main$ mkdir 10
+kuldeep-chamoli@ubuntu:~/Desktop/SoftwareSystems101-main$ cd 10
+kuldeep-chamoli@ubuntu:~/Desktop/SoftwareSystems101-main/10$ nano q10_seek.c
+kuldeep-chamoli@ubuntu:~/Desktop/SoftwareSystems101-main/10$ nano q10_seek.c 
+kuldeep-chamoli@ubuntu:~/Desktop/SoftwareSystems101-main/10$ nano example.txt
+kuldeep-chamoli@ubuntu:~/Desktop/SoftwareSystems101-main/10$ gcc -o q10_seek q10_seek.c 
+kuldeep-chamoli@ubuntu:~/Desktop/SoftwareSystems101-main/10$ ./q10_seek 
+lseek return value: 20
+Data written to file 'example.txt'.
+kuldeep-chamoli@ubuntu:~/Desktop/SoftwareSystems101-main/10$ od -c example.txt 
+0000000   A   B   C   D   E   F   G   H   I   J   e  \n  \0  \0  \0  \0
+0000020  \0  \0  \0  \0   1   2   3   4   5   6   7   8   9   0
+0000036
+kuldeep-

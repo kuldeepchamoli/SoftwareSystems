@@ -1,0 +1,8 @@
+kuldeep-chamoli@ubuntu:~/Desktop/SoftwareSystems101-main/q1.2b/assiq1.2b$ gcc har.c
+kuldeep-chamoli@ubuntu:~/Desktop/SoftwareSystems101-main/q1.2b/assiq1.2b$ ./a.out
+Error creating hard link: File exists
+kuldeep-chamoli@ubuntu:~/Desktop/SoftwareSystems101-main/q1.2b/assiq1.2b$ rm hardlinktooriginal 
+kuldeep-chamoli@ubuntu:~/Desktop/SoftwareSystems101-main/q1.2b/assiq1.2b$ ./a.out
+Hard link created successfully: hardlinktooriginal -> /home/kuldeep-chamoli/Desktop/SoftwareSystems101-main/q1.2b/assiq1.2b/original.txt
+kuldeep-chamoli@ubuntu:~/Desktop/SoftwareSystems101-main/q1.2b/assiq1.2b$ cat hardlinktooriginal 
+I am the problem 
