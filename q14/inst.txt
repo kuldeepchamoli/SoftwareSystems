@@ -1,0 +1,29 @@
+uldeep-chamoli@ubuntu:~/Desktop/SoftwareSystems101-main/q13$ cd..
+cd..: command not found
+kuldeep-chamoli@ubuntu:~/Desktop/SoftwareSystems101-main/q13$ cd ..
+kuldeep-chamoli@ubuntu:~/Desktop/SoftwareSystems101-main$ mkdir q14
+kuldeep-chamoli@ubuntu:~/Desktop/SoftwareSystems101-main$ nano file_type.c
+kuldeep-chamoli@ubuntu:~/Desktop/SoftwareSystems101-main$ nano file_type.c
+kuldeep-chamoli@ubuntu:~/Desktop/SoftwareSystems101-main$ gcc -o file_type file_type.c
+cc1: fatal error: file_type.c: No such file or directory
+compilation terminated.
+kuldeep-chamoli@ubuntu:~/Desktop/SoftwareSystems101-main$ cd q14
+kuldeep-chamoli@ubuntu:~/Desktop/SoftwareSystems101-main/q14$ gcc -o file_type file_type.c
+file_type.c: In function ‘main’:
+file_type.c:40:12: warning: comparison between pointer and integer
+   40 |     if (ar != 2) {
+      |            ^~
+kuldeep-chamoli@ubuntu:~/Desktop/SoftwareSystems101-main/q14$ gcc -o file_type file_type.c
+kuldeep-chamoli@ubuntu:~/Desktop/SoftwareSystems101-main/q14$ ./file_type 
+Usage: ./file_type filename
+kuldeep-chamoli@ubuntu:~/Desktop/SoftwareSystems101-main/q14$ gcc -o file_type file_type.c
+kuldeep-chamoli@ubuntu:~/Desktop/SoftwareSystems101-main/q14$ nano file.txt
+kuldeep-chamoli@ubuntu:~/Desktop/SoftwareSystems101-main/q14$ ./file_type ^[[200~/home/kuldeep-chamoli/Desktop/SoftwareSystems101-main/q14~
+Error getting file information: No such file or directory
+kuldeep-chamoli@ubuntu:~/Desktop/SoftwareSystems101-main/q14$ ./file_type /home/kuldeep-chamoli/Desktop/SoftwareSystems101-main/q14
+File: /home/kuldeep-chamoli/Desktop/SoftwareSystems101-main/q14
+Type: Directory
+kuldeep-chamoli@ubuntu:~/Desktop/SoftwareSystems101-main/q14$ ./file_type /home/kuldeep-chamoli/Desktop/SoftwareSystems101-main/q14/file.txt
+File: /home/kuldeep-chamoli/Desktop/SoftwareSystems101-main/q14/file.txt
+Type: Regular file
+kuldeep

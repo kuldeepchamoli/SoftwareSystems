@@ -1,0 +1,10 @@
+uldeep-chamoli@ubuntu:~/Desktop/SoftwareSystems101-main/q16$ nano lock.c
+kuldeep-chamoli@ubuntu:~/Desktop/SoftwareSystems101-main/q16$ gcc -o lock lock.c 
+kuldeep-chamoli@ubuntu:~/Desktop/SoftwareSystems101-main/q16$ ./lock
+Write lock acquired. Press Enter to release it.
+L
+Write lock released.
+Read lock acquired. Press Enter to release it.
+Read lock released.
+kuldeep-chamoli@ubuntu:~/Desktop/SoftwareSystems101-main/q16$ 
+

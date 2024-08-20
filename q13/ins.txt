@@ -1,0 +1,19 @@
+main/q13$ gcc -o wait wait.c
+wait.c: In function ‘main’:
+wait.c:23:5: error: ‘retval’ undeclared (first use in this function)
+   23 |     retval = select(STDIN_FILENO + 1, &f, NULL, NULL, &t);
+      |     ^~~~~~
+wait.c:23:5: note: each undeclared identifier is reported only once for each function it appears in
+kuldeep-chamoli@ubuntu:~/Desktop/SoftwareSystems101-main/q13$ gcc -o wait wait.c
+kuldeep-chamoli@ubuntu:~/Desktop/SoftwareSystems101-main/q13$ ./wait
+Waiting for input on STDIN for 10 seconds...
+hello there
+Data is available on STDIN.
+Read: hello there
+
+kuldeep-chamoli@ubuntu:~/Desktop/SoftwareSystems101-main/q13$ ./wait
+Waiting for input on STDIN for 10 seconds...
+No data was available within 10 seconds.
+kuldeep-chamoli@ubuntu:~/Desktop/SoftwareSystems101-main/q13$ ^C
+kuldeep-chamoli@ubuntu:~/Desktop/SoftwareSystems101-main/q13$ 
+

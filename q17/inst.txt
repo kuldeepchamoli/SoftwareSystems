@@ -1,0 +1,12 @@
+uldeep-chamoli@ubuntu:~/Desktop/SoftwareSystems101-main/q17$ nano f1.txt
+kuldeep-chamoli@ubuntu:~/Desktop/SoftwareSystems101-main/q17$ gcc -o initial_ticket initial_ticket.c
+kuldeep-chamoli@ubuntu:~/Desktop/SoftwareSystems101-main/q17$ gcc -o wr_lock wr_lock.c
+kuldeep-chamoli@ubuntu:~/Desktop/SoftwareSystems101-main/q17$ ./initial_ticket 
+kuldeep-chamoli@ubuntu:~/Desktop/SoftwareSystems101-main/q17$ ./wr_lock 
+Error: Permission denied
+kuldeep-chamoli@ubuntu:~/Desktop/SoftwareSystems101-main/q17$ ./wr_lock 
+Read lock set
+Read ticket no: 10
+Write lock set
+Read after writing: 11
+Press return to unlock...

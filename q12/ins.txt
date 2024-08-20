@@ -1,0 +1,16 @@
+p-chamoli@ubuntu:~/Desktop/SoftwareSystems101-main/q12$ nano open.c
+kuldeep-chamoli@ubuntu:~/Desktop/SoftwareSystems101-main/q12$ gcc -o open open.c
+kuldeep-chamoli@ubuntu:~/Desktop/SoftwareSystems101-main/q12$ ./open
+Cant open the file: Bad address
+kuldeep-chamoli@ubuntu:~/Desktop/SoftwareSystems101-main/q12$ ./open.c
+bash: ./open.c: Permission denied
+kuldeep-chamoli@ubuntu:~/Desktop/SoftwareSystems101-main/q12$ gcc -o open open.c
+kuldeep-chamoli@ubuntu:~/Desktop/SoftwareSystems101-main/q12$ ./open.c
+bash: ./open.c: Permission denied
+kuldeep-chamoli@ubuntu:~/Desktop/SoftwareSystems101-main/q12$ nano file.txt
+kuldeep-chamoli@ubuntu:~/Desktop/SoftwareSystems101-main/q12$ ./open/home/kuldeep-chamoli/Desktop/SoftwareSystems101-main/q12
+bash: ./open/home/kuldeep-chamoli/Desktop/SoftwareSystems101-main/q12: Not a directory
+kuldeep-chamoli@ubuntu:~/Desktop/SoftwareSystems101-main/q12$ ./open /home/kuldeep-chamoli/Desktop/SoftwareSystems101-main/q12
+Cant open the file: Is a directory
+kuldeep-chamoli@ubuntu:~/Desktop/SoftwareSystems101-main/q12$ ./open /home/kuldeep-chamoli/Desktop/SoftwareSystems101-main/q12/file.txt
+The file is opened in O_RDWR mode.
