@@ -1,0 +1,37 @@
+uldeep-chamoli@ubuntu:~/Desktop/SoftwareSystems101-main/q18$ gcc -o read_write_lock read_write_lock.c 
+kuldeep-chamoli@ubuntu:~/Desktop/SoftwareSystems101-main/q18$ ./read_write_lock 
+Roll No. : 1746954600
+Marks : 1869376613
+Roll No. : 1701344288
+Marks : 1862952306
+Select record you want to lock: new.txt
+No such record found
+kuldeep-chamoli@ubuntu:~/Desktop/SoftwareSystems101-main/q18$ ./read_write_lock 
+Roll No. : 1746954600
+Marks : 1869376613
+Roll No. : 1701344288
+Marks : 1862952306
+Select record you want to lock: Roll No. : 1701344288
+No such record found
+kuldeep-chamoli@ubuntu:~/Desktop/SoftwareSystems101-main/q18$ gcc -o read_write_lock read_write_lock.c 
+kuldeep-chamoli@ubuntu:~/Desktop/SoftwareSystems101-main/q18$ ./read_write_lock 
+Roll No. : 1746954600
+Marks : 1869376613
+Roll No. : 1701344288
+Marks : 1862952306
+Select record you want to lock: 1
+Select type of lock: Read (1) Write (2) Choice: 2
+Roll No: 1746954600 
+Marks : 1869376613
+Waiting to acquire lock on record 1746954600 
+Acquired lock on record 1746954600 
+You selected to write on this record. 
+Enter new marks: 18654425
+Roll No: 1746954600 
+Marks : 18654425
+Press return to exit
+
+Exited critical section
+kuldeep-chamoli@ubuntu:~/Desktop/SoftwareSystems101-main/q18$ ^C
+kuldeep-chamoli@ubuntu:~/Desktop/SoftwareSystems101-main/q18$ 
+
