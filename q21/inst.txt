@@ -1,0 +1,8 @@
+kuldeep-chamoli@ubuntu:~/Desktop$ cd SoftwareSystems101-main/
+kuldeep-chamoli@ubuntu:~/Desktop/SoftwareSystems101-main$ cd q21
+kuldeep-chamoli@ubuntu:~/Desktop/SoftwareSystems101-main/q21$ gcc -o processid processid.c 
+kuldeep-chamoli@ubuntu:~/Desktop/SoftwareSystems101-main/q21$ ./processid 
+The Parent Process id is : 5710
+The child process id is : 5711
+kuldeep-chamoli@ubuntu:~/Desktop/SoftwareSystems101-main/q21$ nano inst.txt
+

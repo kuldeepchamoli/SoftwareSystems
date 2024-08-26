@@ -1,0 +1,28 @@
+kuldeep-chamoli@ubuntu:~/Desktop/SoftwareSystems101-main$ mkdir q19
+kuldeep-chamoli@ubuntu:~/Desktop/SoftwareSystems101-main$ cd q19
+kuldeep-chamoli@ubuntu:~/Desktop/SoftwareSystems101-main/q19$ nano time.c
+kuldeep-chamoli@ubuntu:~/Desktop/SoftwareSystems101-main/q19$ gcc -o time time.c
+time.c: In function ‘main’:
+time.c:18:4: error: expected ‘,’ or ‘;’ before ‘double’
+   18 |    double start = (double)time/CLOCKS_PER_SEC;
+      |    ^~~~~~
+time.c:19:32: error: ‘an’ undeclared (first use in this function); did you mean ‘main’?
+   19 |    printf("Start time is %f\n",an);
+      |                                ^~
+      |                                main
+time.c:19:32: note: each undeclared identifier is reported only once for each function it appears in
+time.c:23:32: error: ‘ans’ undeclared (first use in this function); did you mean ‘abs’?
+   23 |    printf("End time is : %f\n",ans);
+      |                                ^~~
+      |                                abs
+time.c:24:19: error: ‘start’ undeclared (first use in this function)
+   24 |    double f = end-start;
+      |                   ^~~~~
+kuldeep-chamoli@ubuntu:~/Desktop/SoftwareSystems101-main/q19$ gcc -o time time.c
+kuldeep-chamoli@ubuntu:~/Desktop/SoftwareSystems101-main/q19$ ./a.out
+bash: ./a.out: No such file or directory
+kuldeep-chamoli@ubuntu:~/Desktop/SoftwareSystems101-main/q19$ gcc -o time time.c
+kuldeep-chamoli@ubuntu:~/Desktop/SoftwareSystems101-main/q19$ ./time
+Start time is 0.003898
+End time is : 0.004187
+Total Time Taken is 0.000289

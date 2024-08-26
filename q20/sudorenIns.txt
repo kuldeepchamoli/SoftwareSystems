@@ -1,0 +1,5 @@
+kuldeep-chamoli@ubuntu:~$ sudo renice -n 5 -p 5351
+[sudo] password for kuldeep-chamoli: 
+5351 (process ID) old priority 0, new priority 5
+kuldeep-chamoli@ubuntu:~$ ^C
+kuldeep-chamoli@ubuntu:~$ 

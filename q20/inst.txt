@@ -1,0 +1,82 @@
+kuldeep-chamoli@ubuntu:~/Desktop/SoftwareSystems101-main/q19$ cd ..
+kuldeep-chamoli@ubuntu:~/Desktop/SoftwareSystems101-main$ mkdir 20
+kuldeep-chamoli@ubuntu:~/Desktop/SoftwareSystems101-main$ rm 20
+rm: cannot remove '20': Is a directory
+kuldeep-chamoli@ubuntu:~/Desktop/SoftwareSystems101-main$ mkdir q20
+kuldeep-chamoli@ubuntu:~/Desktop/SoftwareSystems101-main$ cd q20
+kuldeep-chamoli@ubuntu:~/Desktop/SoftwareSystems101-main/q20$ nano priority.c
+kuldeep-chamoli@ubuntu:~/Desktop/SoftwareSystems101-main/q20$ gcc -o priority priority.c
+kuldeep-chamoli@ubuntu:~/Desktop/SoftwareSystems101-main/q20$ ./priority 
+Please pass the integer value to be added to the current nice value
+kuldeep-chamoli@ubuntu:~/Desktop/SoftwareSystems101-main/q20$ 2
+2: command not found
+kuldeep-chamoli@ubuntu:~/Desktop/SoftwareSystems101-main/q20$ gcc -o priority priority.c
+kuldeep-chamoli@ubuntu:~/Desktop/SoftwareSystems101-main/q20$ ./priority 
+Please pass the integer value to be added to the current nice value
+kuldeep-chamoli@ubuntu:~/Desktop/SoftwareSystems101-main/q20$ gcc -o priority priority.c
+kuldeep-chamoli@ubuntu:~/Desktop/SoftwareSystems101-main/q20$ ^[[200~nice -n <niceness_value> ./check_priority
+bash: niceness_value: No such file or directory
+kuldeep-chamoli@ubuntu:~/Desktop/SoftwareSystems101-main/q20$ nice -n 2 ./priority
+Please pass the integer value to be added to the current nice value
+kuldeep-chamoli@ubuntu:~/Desktop/SoftwareSystems101-main/q20$ man nice
+kuldeep-chamoli@ubuntu:~/Desktop/SoftwareSystems101-main/q20$ man nice
+kuldeep-chamoli@ubuntu:~/Desktop/SoftwareSystems101-main/q20$ nice -n 2 
+nice: a command must be given with an adjustment
+Try 'nice --help' for more information.
+kuldeep-chamoli@ubuntu:~/Desktop/SoftwareSystems101-main/q20$ nice --help
+Usage: nice [OPTION] [COMMAND [ARG]...]
+Run COMMAND with an adjusted niceness, which affects process scheduling.
+With no COMMAND, print the current niceness.  Niceness values range from
+-20 (most favorable to the process) to 19 (least favorable to the process).
+
+Mandatory arguments to long options are mandatory for short options too.
+  -n, --adjustment=N   add integer N to the niceness (default 10)
+      --help        display this help and exit
+      --version     output version information and exit
+
+NOTE: your shell may have its own version of nice, which usually supersedes
+the version described here.  Please refer to your shell's documentation
+for details about the options it supports.
+
+GNU coreutils online help: <https://www.gnu.org/software/coreutils/>
+Full documentation <https://www.gnu.org/software/coreutils/nice>
+or available locally via: info '(coreutils) nice invocation'
+kuldeep-chamoli@ubuntu:~/Desktop/SoftwareSystems101-main/q20$ nice -n 2 ./priority
+Please pass the integer value to be added to the current nice value
+kuldeep-chamoli@ubuntu:~/Desktop/SoftwareSystems101-main/q20$ nice -n 4 ./priority
+Please pass the integer value to be added to the current nice value
+kuldeep-chamoli@ubuntu:~/Desktop/SoftwareSystems101-main/q20$ gcc -o priority priority.c
+kuldeep-chamoli@ubuntu:~/Desktop/SoftwareSystems101-main/q20$ ./priority 2
+Current priority: 0
+New priority: 2
+kuldeep-chamoli@ubuntu:~/Desktop/SoftwareSystems101-main/q20$ ./priority 3
+Current priority: 0
+New priority: 3
+kuldeep-chamoli@ubuntu:~/Desktop/SoftwareSystems101-main/q20$ ./priority 3
+Current priority: 0
+New priority: 3
+kuldeep-chamoli@ubuntu:~/Desktop/SoftwareSystems101-main/q20$ nice 3
+nice: ‘3’: No such file or directory
+kuldeep-chamoli@ubuntu:~/Desktop/SoftwareSystems101-main/q20$ nice priority.c 4
+nice: ‘priority.c’: No such file or directory
+kuldeep-chamoli@ubuntu:~/Desktop/SoftwareSystems101-main/q20$ nice --help
+Usage: nice [OPTION] [COMMAND [ARG]...]
+Run COMMAND with an adjusted niceness, which affects process scheduling.
+With no COMMAND, print the current niceness.  Niceness values range from
+-20 (most favorable to the process) to 19 (least favorable to the process).
+
+Mandatory arguments to long options are mandatory for short options too.
+  -n, --adjustment=N   add integer N to the niceness (default 10)
+      --help        display this help and exit
+      --version     output version information and exit
+
+NOTE: your shell may have its own version of nice, which usually supersedes
+the version described here.  Please refer to your shell's documentation
+for details about the options it supports.
+
+GNU coreutils online help: <https://www.gnu.org/software/coreutils/>
+Full documentation <https://www.gnu.org/software/coreutils/nice>
+or available locally via: info '(coreutils) nice invocation'
+kuldeep-chamoli@ubuntu:~/Desktop/SoftwareSystems101-main/q20$ man nice
+kuldeep-chamoli@ubuntu:~/Desktop/SoftwareSystems101-main/q20$ 
+

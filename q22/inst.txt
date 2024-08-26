@@ -1,0 +1,10 @@
+kuldeep-chamoli@ubuntu:~/Desktop/SoftwareSystems101-main$ mkdir q22
+kuldeep-chamoli@ubuntu:~/Desktop/SoftwareSystems101-main$ cd q22
+kuldeep-chamoli@ubuntu:~/Desktop/SoftwareSystems101-main/q22$ nano output.c
+kuldeep-chamoli@ubuntu:~/Desktop/SoftwareSystems101-main/q22$ ./output
+bash: ./output: No such file or directory
+kuldeep-chamoli@ubuntu:~/Desktop/SoftwareSystems101-main/q22$ gcc -o output output.c 
+kuldeep-chamoli@ubuntu:~/Desktop/SoftwareSystems101-main/q22$ ./output 
+Parent process (PID: 5814) has written to the file.
+Child process (PID: 5815) has written to the file.
+kuldeep-chamoli@ubuntu:~/Desktop/SoftwareSystems101-

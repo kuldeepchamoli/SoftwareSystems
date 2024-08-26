@@ -1,0 +1,6 @@
+kuldeep-chamoli@ubuntu:~$ nano priority_cmd.c
+kuldeep-chamoli@ubuntu:~$ gcc -o priority_cmd priority_cmd.c 
+kuldeep-chamoli@ubuntu:~$ ./priority_cmd 
+Current priority (niceness) of the process: 0
+kuldeep-chamoli@ubuntu:~$ nice -n 10 ./priority_cmd
+Current priority (niceness) of the process: 10
