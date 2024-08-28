@@ -1,0 +1,8 @@
+kuldeep-chamoli@ubuntu:~$ cd Desktop/
+kuldeep-chamoli@ubuntu:~/Desktop$ cd SoftwareSystems101-main/
+kuldeep-chamoli@ubuntu:~/Desktop/SoftwareSystems101-main$ cd q23
+kuldeep-chamoli@ubuntu:~/Desktop/SoftwareSystems101-main/q23$ gcc -o zombie zombie.c
+kuldeep-chamoli@ubuntu:~/Desktop/SoftwareSystems101-main/q23$ ./zombie
+kuldeep-chamoli@ubuntu:~/Desktop/SoftwareSystems101-main/q23$ ps -e -o pid,ppid,stat,cmd | grep ' Z'
+   9004    8886 S+   grep --color=auto  Z
+kuldeep-chamoli@ubuntu:~/Desktop/SoftwareSystems101-main/q23$ nano ins.txt

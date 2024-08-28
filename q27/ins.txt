@@ -1,0 +1,33 @@
+kuldeep-chamoli@ubuntu:~/Desktop/SoftwareSystems101-main$ mkdir q27
+kuldeep-chamoli@ubuntu:~/Desktop/SoftwareSystems101-main$ cd q27
+kuldeep-chamoli@ubuntu:~/Desktop/SoftwareSystems101-main/q27$ nano execute.c
+kuldeep-chamoli@ubuntu:~/Desktop/SoftwareSystems101-main/q27$ gcc -o execute execute.c 
+kuldeep-chamoli@ubuntu:~/Desktop/SoftwareSystems101-main/q27$ ./execute 
+Using execl:
+
+Using execlp:
+
+Using execle:
+
+Using execv:
+
+Using execvp:
+kuldeep-chamoli@ubuntu:~/Desktop/SoftwareSystems101-main/q27$ .:
+.:
+.:
+total 20
+-rwxrwxr-x 1 kuldeep-chamoli kuldeep-chamoli 16352 Aug 28 22:33 execute
+-rw-rw-r-- 1 kuldeep-chamoli kuldeep-chamoli  2704 Aug 28 22:31 execute.c
+total 20
+-rwxrwxr-x 1 kuldeep-chamoli kuldeep-chamoli 16352 Aug 28 22:33 execute
+-rw-rw-r-- 1 kuldeep-chamoli kuldeep-chamoli  2704 Aug 28 22:31 execute.c
+total 20
+-rwxrwxr-x 1 kuldeep-chamoli kuldeep-chamoli 16352 Aug 28 22:33 execute
+-rw-rw-r-- 1 kuldeep-chamoli kuldeep-chamoli  2704 Aug 28 22:31 execute.c
+.:
+/bin/ls: cannot access 'ls': No such file or directory
+total 20
+-rwxrwxr-x 1 kuldeep-chamoli kuldeep-chamoli 16352 Aug 28 22:33 execute
+-rw-rw-r-- 1 kuldeep-chamoli kuldeep-chamoli  2704 Aug 28 22:31 execute.c
+^C
+kuldeep-chamoli@ubuntu:~/Desktop/SoftwareSystems101-main/q27$ nano ins.txt

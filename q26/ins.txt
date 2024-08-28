@@ -1,0 +1,17 @@
+kuldeep-chamoli@ubuntu:~/Desktop/SoftwareSystems101-main/q28$ gcc -o 26 26.c
+cc1: fatal error: 26.c: No such file or directory
+compilation terminated.
+kuldeep-chamoli@ubuntu:~/Desktop/SoftwareSystems101-main/q28$ cd ..
+kuldeep-chamoli@ubuntu:~/Desktop/SoftwareSystems101-main$ cd 26
+bash: cd: 26: No such file or directory
+kuldeep-chamoli@ubuntu:~/Desktop/SoftwareSystems101-main$ cd q26
+kuldeep-chamoli@ubuntu:~/Desktop/SoftwareSystems101-main/q26$ gcc -o 26 26.c
+kuldeep-chamoli@ubuntu:~/Desktop/SoftwareSystems101-main/q26$ gcc -o  testprog.out testprog.c
+kuldeep-chamoli@ubuntu:~/Desktop/SoftwareSystems101-main/q26$ gcc -o 26 26.c
+kuldeep-chamoli@ubuntu:~/Desktop/SoftwareSystems101-main/q26$ ./26
+Executing command: ./testprog.out Test-Input-1
+
+This line is in test_prog.c
+Input/argument given is: Test-Input-1
+
+Command executed successfully

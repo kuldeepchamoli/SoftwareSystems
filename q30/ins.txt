@@ -1,0 +1,41 @@
+kuldeep-chamoli@ubuntu:~/Desktop/SoftwareSystems101-main/q29$ cd ..
+kuldeep-chamoli@ubuntu:~/Desktop/SoftwareSystems101-main$ mkdir q30
+kuldeep-chamoli@ubuntu:~/Desktop/SoftwareSystems101-main$ cd q30
+kuldeep-chamoli@ubuntu:~/Desktop/SoftwareSystems101-main/q30$ nano daemon.c
+kuldeep-chamoli@ubuntu:~/Desktop/SoftwareSystems101-main/q30$ scc -o daemon daemon.c 
+Command 'scc' not found, but can be installed with:
+sudo snap install scc
+kuldeep-chamoli@ubuntu:~/Desktop/SoftwareSystems101-main/q30$ gcc -o daemon daemon.c 
+kuldeep-chamoli@ubuntu:~/Desktop/SoftwareSystems101-main/q30$ ./daemon 
+Pass at least one argument
+kuldeep-chamoli@ubuntu:~/Desktop/SoftwareSystems101-main/q30$ ./daemon 2
+Boo! Got ya!
+kuldeep-chamoli@ubuntu:~/Desktop/SoftwareSystems101-main/q30$ sudo ./daemon 
+Pass at least one argument
+kuldeep-chamoli@ubuntu:~/Desktop/SoftwareSystems101-main/q30$ sudo ./daemon &
+[1] 7970
+kuldeep-chamoli@ubuntu:~/Desktop/SoftwareSystems101-main/q30$ Pass at least one argument
+^C
+[1]+  Done                    sudo ./daemon
+kuldeep-chamoli@ubuntu:~/Desktop/SoftwareSystems101-main/q30$ gcc -o daemon daemon.c 
+kuldeep-chamoli@ubuntu:~/Desktop/SoftwareSystems101-main/q30$ ./daemon 23 20 0 &ps aux | grep daemon     
+[1] 8153
+avahi        689  0.0  0.0   8556  4224 ?        Ss   22:18   0:00 avahi-daemon: running [ubuntu.local]
+message+     691  0.1  0.0  12156  7040 ?        Ss   22:18   0:03 @dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+root         710  0.0  0.0 313252  7276 ?        Ssl  22:18   0:00 /usr/libexec/power-profiles-daemon
+root         721  0.0  0.0 313072  7220 ?        Ssl  22:18   0:00 /usr/libexec/accounts-daemon
+avahi        741  0.0  0.0   8284  1292 ?        S    22:18   0:00 avahi-daemon: chroot helper
+root         782  0.1  0.1 334640 18620 ?        Ssl  22:18   0:03 /usr/sbin/NetworkManager --no-daemon
+rtkit       1065  0.0  0.0  22788  3200 ?        SNsl 22:18   0:00 /usr/libexec/rtkit-daemon
+kuldeep+    1592  0.0  0.0  11104  6400 ?        Ss   22:18   0:01 /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+kuldeep+    1600  0.0  0.0 315932  9856 ?        SLsl 22:18   0:00 /usr/bin/gnome-keyring-daemon --foreground --components=pkcs11,secrets --control-directory=/run/user/1000/keyring
+kuldeep+    1760  0.0  0.0   9408  4608 ?        S    22:18   0:00 /usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/accessibility.conf --nofork --print-address 11 --address=unix:path=/run/user/1000/at-spi/bus
+kuldeep+    1839  0.0  0.2 641176 35840 ?        Sl   22:18   0:00 /usr/libexec/goa-daemon
+kuldeep+    1940  0.0  0.0   2732  1408 ?        Ss   22:18   0:00 sh -c /usr/bin/ibus-daemon --panel disable $([ "$XDG_SESSION_TYPE" = "x11" ] && echo "--xim")
+kuldeep+    1948  0.3  0.0 388736 11792 ?        Sl   22:18   0:12 /usr/bin/ibus-daemon --panel disable
+kuldeep+    8155  0.0  0.0   9072  2304 pts/2    S+   23:19   0:00 grep --color=auto daemon
+kuldeep+    8156  250  0.0   2616   128 ?        Rs   23:19   0:00 ./daemon 23 20 0
+[1]+  Done                    ./daemon 23 20 0
+kuldeep-chamoli@ubuntu:~/Desktop/SoftwareSystems101-main/q30$ Boo! Got ya!
+
+

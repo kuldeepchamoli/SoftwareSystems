@@ -1,0 +1,17 @@
+kuldeep-chamoli@ubuntu:~/Desktop/SoftwareSystems101-main$ mkdir q24
+kuldeep-chamoli@ubuntu:~/Desktop/SoftwareSystems101-main$ cd q24
+kuldeep-chamoli@ubuntu:~/Desktop/SoftwareSystems101-main/q24$ nano orphan.c
+kuldeep-chamoli@ubuntu:~/Desktop/SoftwareSystems101-main/q24$ gcc -o orphan orphan.c
+kuldeep-chamoli@ubuntu:~/Desktop/SoftwareSystems101-main/q24$ ./orphan 
+Parent process PID: 9649
+Child process PID: 9650
+kuldeep-chamoli@ubuntu:~/Desktop/SoftwareSystems101-main/q24$ Orphan child process PID: 9650, Parent PID: 1549
+    PID    PPID STAT CMD
+   8886    2956 Ss+  bash
+   9650    1549 S    ./orphan
+   9653    9650 S    sh -c ps -o pid,ppid,stat,cmd // note child process adopted by another I got this using pid of child is here
+kuldeep-chamoli@ubuntu:~/Desktop/SoftwareSystems101-main/q24$ ps -e -o pid,ppid,stat,cmd | grep './orphan'
+   9977    8886 S+   grep --color=auto ./orphan
+kuldeep-chamoli@ubuntu:~/Desktop/SoftwareSystems101-main/q24$ nano ins.txt
+kuldeep-chamoli@ubuntu:~/Desktop/SoftwareSystems101-main/q24$ 
+

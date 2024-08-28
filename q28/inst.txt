@@ -1,0 +1,12 @@
+kuldeep-chamoli@ubuntu:~/Desktop/SoftwareSystems101-main$ mkdir q28
+kuldeep-chamoli@ubuntu:~/Desktop/SoftwareSystems101-main$ cd q28
+kuldeep-chamoli@ubuntu:~/Desktop/SoftwareSystems101-main/q28$ nano prority.c
+kuldeep-chamoli@ubuntu:~/Desktop/SoftwareSystems101-main/q28$ gcc -o prority prority.c 
+kuldeep-chamoli@ubuntu:~/Desktop/SoftwareSystems101-main/q28$ ./prority 
+Maximum real-time priority: 99
+Minimum real-time priority: 1
+kuldeep-chamoli@ubuntu:~/Desktop/SoftwareSystems101-main/q28$ gcc -o prority prority.c 
+kuldeep-chamoli@ubuntu:~/Desktop/SoftwareSystems101-main/q28$ ./prority 
+Maximum real-time priority: 99
+Minimum real-time priority: 1
+kuldeep-chamoli@ubuntu:~/Desktop/SoftwareSystems101-main/q28$ 
