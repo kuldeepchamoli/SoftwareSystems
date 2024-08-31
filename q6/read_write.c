@@ -1,3 +1,11 @@
+/*
+============================================================================
+Name : read_write.c
+Author : Kuldeep Chamoli
+Description : Write a program to take input from STDIN and display on STDOUT. Use only read/write system calls
+Date: 20th August, 2024.
+============================================================================
+*/
 #include <unistd.h>  // For read() and write() system calls
 #include <stdio.h>   // For perror()
 

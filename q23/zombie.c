@@ -1,6 +1,6 @@
 /*
 ============================================================================
-Name : 22 zombie.c
+Name : 23 zombie.c
 Author : Kuldeep Chamoli
 Description : Write a program to create a Zombie state of the running program.
 Date:  26,August 2024

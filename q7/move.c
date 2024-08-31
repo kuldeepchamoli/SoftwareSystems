@@ -1,16 +1,24 @@
-#include <fcntl.h>     // For open() and file control options
-#include <unistd.h>    // For read(), write(), close() system calls
-#include <stdio.h>     // For perror()
-#include <stdlib.h>    // For exit()
+/*
+============================================================================
+Name : move.c
+Author : Kuldeep Chamoli
+Description : Write a program to copy file1 into file2 ($cp file1 file2).
+Date: 20th August, 2024.
+============================================================================
+*/
+#include <fcntl.h>     
+#include <unistd.h>    
+#include <stdio.h>     
+#include <stdlib.h>    
 
-#define BUFFER_SIZE 1024  // Define a buffer size for reading and writing
+#define BUFFER_SIZE 1024  
 
 int main(int argc, char *argv[]) {
-    int source_fd, dest_fd;   // File descriptors for the source and destination files
+    int source_fd, dest_fd;   
     ssize_t bytes_read, bytes_written;
     char buffer[BUFFER_SIZE];
 
-    // Check if the correct number of arguments is provided
+    
     if (argc != 3) {
         fprintf(stderr, "Usage: %s source_file destination_file\n", argv[0]);
         exit(EXIT_FAILURE);
@@ -31,7 +39,7 @@ int main(int argc, char *argv[]) {
         exit(EXIT_FAILURE);
     }
 
-    // Read from the source file and write to the destination file
+    
     while ((bytes_read = read(source_fd, buffer, BUFFER_SIZE)) > 0) {
         bytes_written = write(dest_fd, buffer, bytes_read);
         if (bytes_written != bytes_read) {

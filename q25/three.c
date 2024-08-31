@@ -1,3 +1,12 @@
+/*
+================================================
+Author : Kuldeep Chamoli
+
+Description :
+25. Write a program to create three child processes. The parent should wait for a particular child (use
+waitpid system call).
+================================================
+*/
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
